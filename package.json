@@ -1,0 +1,24 @@
+{
+  "name": "which-fe-tech-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start karma.config.js --single-run",
+    "start": "webpack-dev-server --inline --quiet"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "0.23.1",
+    "jasmine-core": "2.4.1",
+    "karma": "0.13.22",
+    "karma-chrome-launcher": "1.0.1",
+    "karma-jasmine": "1.0.2",
+    "karma-webpack": "1.7.0",
+    "lodash": "4.12.0",
+    "style-loader": "0.13.1",
+    "webpack": "1.13.0",
+    "webpack-dev-server": "1.14.1"
+  }
+}

@@ -1,21 +1,21 @@
-var path = require("path");
+const path = require('path');
 
 module.exports = {
   entry: {
-    app: ["./app/index.js"]
+    app: ['./src/index.js']
   },
   module: {
     rules: [{
       test: /\.css$/,
       use: [
-        "style-loader",
-        "css-loader",
+        'style-loader',
+        'css-loader',
       ],
     }],
   },
   output: {
-    path: path.resolve(__dirname, "build"),
-    publicPath: "/assets/",
-    filename: "bundle.js"
+    path: path.resolve(__dirname, 'build'),
+    publicPath: '/assets/',
+    filename: 'bundle.js'
   }
 };

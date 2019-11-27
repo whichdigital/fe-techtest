@@ -2,11 +2,11 @@
 
 ## Getting up and running
 
-This repo contains a very simple webpack based development environment. We'll need to install some stuff to get going.
+This repo contains a very simple webpack based development environment. We'll need to install some stuff to get going. If you'd rather start from scratch with your own setup that's fine too, as long as you complete [the exercise](#the-exercise).
 
 ### Requirements
 
-Webpack needs nodejs to do it's thing. We aren't making a node app - just using it as a dev tool.
+Webpack needs nodejs to do its thing. We aren't making a node app - just using it as a dev tool.
 
 * [nodejs](https://nodejs.org/en/)
 
@@ -30,7 +30,7 @@ Open [http://localhost:8080/](http://localhost:8080/) in your browser and you sh
 
 ### Development
 
-The source files are located in `app/`. If you change a file, webpack will reload your files and refresh the browser for you. It's an ES5 environment, so classic javascript only!
+The source files are located in `src/`. If you change a file, webpack will reload your files and refresh the browser for you.
 
 ### Test
 
@@ -48,18 +48,20 @@ __Description__: The application will display a grid of all the numbers from 1 t
 
 __Constraints__: On mobile devices the grid will display 1 number per row. On tablet devices 2 numbers per row and on desktop and larger devices 3 numbers per row. The numbers should fill their rows equally. When the screen width grows very large a margin should appear either side of the grid so that the boxes don’t keep getting larger.
 
-No code libraries should be used, but a library can be used for testing: the exercise is intended to demonstrate personal knowledge and experience rather than use of libraries. 
+You do not need to use any libraries but if you do, you should be able to explain the reasons for your choices.
 
 If there is any information that you feel is missing from the story then please make sensible decisions (for example it’s up to you how you define ‘mobile’, as long as it’s sensible, similarly please define highlighting).
 
 __Criteria for assessment__: Important things that will be assessed are:
 
 * Project layout.
-* Coding style (HTML, CSS, JavaScript and tests).
-* The test code that you write.
-* Use of responsive design.
-* Naming conventions used.
-* Meeting the requirements.
+* Coding style, i.e. your approach not whether you use semicolons or not ;)
+* Your approach to unit testing/TDD
+* Maintainability and extensibility
+* Use of responsive design
+* Performance & Accessibility
+* Naming conventions used
+* Meeting the requirements
 
 The test won’t be assessed on design at all, so don’t worry how it looks.
 

@@ -2,7 +2,9 @@
 
 ## Getting up and running
 
-This repo contains a very simple webpack based development environment. We'll need to install some stuff to get going. If you'd rather start from scratch with your own setup that's fine too, as long as you complete [the exercise](#the-exercise).
+Clone or fork this repo. If you'd rather start from scratch with your own setup that's fine too, as long as you complete [the exercise](#the-exercise).
+
+This repo contains a very simple webpack based development environment. We'll need to install some stuff to get going...
 
 ### Requirements
 

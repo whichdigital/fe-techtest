@@ -5,14 +5,15 @@ module.exports = {
     app: ["./app/index.js"]
   },
   module: {
-    loaders: [{
+    rules: [{
       test: /\.css$/,
-      loader: "style-loader!css-loader"
-    }]
+      use: [
+        "style-loader",
+        "css-loader",
+      ],
+    }],
   },
-  noInfo: true,
   output: {
-    quiet: true,
     path: path.resolve(__dirname, "build"),
     publicPath: "/assets/",
     filename: "bundle.js"

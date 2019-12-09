@@ -3,3 +3,22 @@ body {
   text-align: center;
   color: black;
 }
+
+body > div {
+  max-width: 48rem;
+  margin: auto;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 0.5rem solid;
+}
+
+div > div {
+  width: 15rem;
+  height: 15rem;
+  font-size: 7.5rem;
+}

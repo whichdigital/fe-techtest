@@ -6,6 +6,6 @@ export const createNumberDiv = number => {
   return div
 }
 
-export const createAllNumberDivs = array => array.forEach(createNumberDiv)
+export const createAllNumberDivs = array => array.map(createNumberDiv)
 
 export const allNumberDivs = createAllNumberDivs(numberArray)

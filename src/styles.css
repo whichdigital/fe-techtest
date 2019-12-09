@@ -21,4 +21,10 @@ div > div {
   width: 15rem;
   height: 15rem;
   font-size: 7.5rem;
+  cursor: pointer;
+}
+
+div > div:hover {
+  background-color: rgba(173,216,230,0.3);
+  transition: background-color 0.1s
 }

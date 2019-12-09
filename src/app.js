@@ -1,6 +1,5 @@
-// source goes here
-const app = function() {
-  console.log('hello from app!');
+const app = () => {
+  
 };
 
 export default app;

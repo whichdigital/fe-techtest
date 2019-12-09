@@ -4,9 +4,22 @@ body {
   color: black;
 }
 
-body > div {
-  max-width: 48rem;
-  margin: auto;
+@media screen and (max-width: 768px) {
+  body > div {
+    width: 16rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body > div {
+    width: 32rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body > div {
+    width: 48rem;
+  }
 }
 
 div {
@@ -15,6 +28,7 @@ div {
   justify-content: center;
   align-items: center;
   border: 0.5rem solid;
+  margin: auto;
 }
 
 div > div {

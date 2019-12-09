@@ -7,3 +7,5 @@ export const createNumberDiv = number => {
 }
 
 export const createAllNumberDivs = array => array.forEach(createNumberDiv)
+
+export const allNumberDivs = createAllNumberDivs(numberArray)

@@ -5,3 +5,5 @@ export const createNumberDiv = number => {
   div.innerText = number
   return div
 }
+
+export const createAllNumberDivs = array => array.forEach(createNumberDiv)

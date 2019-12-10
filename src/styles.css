@@ -38,6 +38,14 @@ div > div {
   cursor: pointer;
 }
 
+.selected {
+  background-color: yellow;
+}
+
+.selected:hover {
+  background-color: yellow
+}
+
 div > div:hover {
   background-color: rgba(173,216,230,0.3);
   transition: background-color 0.1s

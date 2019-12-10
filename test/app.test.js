@@ -1,7 +1,13 @@
-import app from '../src/app';
+import {generateNumbers} from '../src/app';
 
-describe('app', function() {
-  it('does nothing', function() {
-    expect(true).toBe(true);
-  });
-});
+describe('app', function(){
+  const tileContainerEl = document.createElement('div')
+  tileContainerEl.id = "numbers-container"
+  document.body.appendChild(tileContainerEl)
+
+
+  it('generates an array of numbers', function(){
+    expect(generateNumbers().length).toBe(144)
+  })
+
+})

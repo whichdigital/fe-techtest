@@ -8,7 +8,9 @@
     "clean": "rimraf ./build/*",
     "prepare": "npm run clean && npm run build",
     "start": "webpack-dev-server --quiet",
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "author": "",
   "license": "ISC",

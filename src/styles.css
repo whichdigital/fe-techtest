@@ -2,8 +2,47 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
 .grid {
   display: grid;
   column-gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.number {
+  display: flex;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid grey;
+}
+
+.number-active {
+  background-color: lightgreen;
+}
+
+.hide-visually {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }

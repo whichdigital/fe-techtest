@@ -2,10 +2,11 @@
   "name": "which-fe-tech-test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build",
+    "clean": "rimraf ./build/*",
+    "prepare": "npm run clean && npm run build",
     "start": "webpack-dev-server --quiet",
     "test": "jest"
   },
@@ -13,44 +14,38 @@
   "license": "ISC",
   "dependencies": {
     "@babel/core": "7.7.4",
+    "@babel/plugin-transform-react-jsx": "7.7.4",
     "@babel/preset-env": "7.7.4",
+    "@babel/preset-react": "^7.9.1",
+    "babel-loader": "^8.1.0",
     "css-loader": "3.2.0",
+    "preact": "^10.3.4",
+    "rimraf": "^3.0.2",
     "style-loader": "1.0.0",
     "webpack": "4.41.2",
     "webpack-cli": "3.3.10",
     "webpack-dev-server": "3.9.0"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.9.0",
+    "@testing-library/preact": "^1.0.2",
     "@types/jest": "^25.1.4",
     "jest": "^24.9.0",
     "ts-jest": "^25.2.1",
-    "ts-loader": "^6.2.1",
     "typescript": "^3.8.3"
-  },
-  "babel": {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": {
-            "esmodules": true
-          }
-        }
-      ]
-    ]
   },
   "jest": {
     "moduleFileExtensions": [
       "ts",
-      "js"
+      "tsx",
+      "js",
+      "jsx"
     ],
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/__mocks__/fileMock.js",
-      "\\.(css|less|scss)$": "<rootDir>/test/__mocks__/styleMock.js"
-    },
+    "modulePathIgnorePatterns": [
+      "<rootDir>/build/"
+    ],
     "transform": {
-      "^.+\\.ts$": "ts-jest"
-    },
-    "testRegex": "^.+\\.test\\.ts$"
+      "^.+\\.tsx?$": "ts-jest"
+    }
   }
 }

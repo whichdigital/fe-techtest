@@ -1,3 +1,9 @@
-body {
-  color: red;
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  column-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
 }

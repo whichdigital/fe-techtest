@@ -1,6 +1,10 @@
+import React from 'react'
+
+import Multiplier from './components/Multiplier.jsx'
+
 // source goes here
-const app = function() {
-  console.log('hello from app!');
+const app = function () {
+  return <Multiplier />
 };
 
 export default app;

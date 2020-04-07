@@ -1,7 +1,12 @@
-import app from '../src/app';
+import React from 'react';
+import { shallow } from 'enzyme';
 
-describe('app', function() {
-  it('does nothing', function() {
-    expect(true).toBe(true);
-  });
-});
+import Multiplier from '../src/components/Multiplier.jsx';
+
+describe('<App />', () => {
+  it('renders the <Multiplier /> component', () => {
+    const wrapper = shallow(<Multiplier />);
+    expect(wrapper.find('div')).toHaveLength(1);
+  })
+})
+

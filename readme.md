@@ -68,3 +68,39 @@ __Criteria for assessment__: Important things that will be assessed are:
 * Meeting the requirements
 
 The test won’t be assessed on design at all, so don’t worry how it looks.
+
+
+## Notes:
+I decided to use the React library for this small JS app. 
+The reason for this is because you stated above that Which? primarily uses React for it's frontend development, so this made sense to me to do the test using the same library.
+
+I opted for a clean install using Create React App and the typescript template.
+This saved a lot of time by everything being configured out the box and also optimised for production.
+
+
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+
+### `npm run eject`

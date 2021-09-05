@@ -1,16 +1,12 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { isMultiple } from '../helpers/isMultiple';
 import NumberBox from './NumberBox';
+import { createNumberArray } from '../helpers/createNumberArray';
 
 function App() {
     const [chosenNumber, setChosenNumber] = useState<number>(0);
 
-    const numberOfButtons: number = 114;
-    let numbersArray: number[] = [];
-
-    for (let i = 1; i <= numberOfButtons; i++) {
-        numbersArray = [...numbersArray, i];
-    }
+    const numbersArray = createNumberArray(1, 114);
 
     const numberBoxList = numbersArray.map((num) => (
         <NumberBox key={num} number={num} callBack={setChosenNumber} isMultiple={isMultiple(num, chosenNumber)} />

@@ -1,0 +1,10 @@
+.number-box {
+    button {
+        cursor: pointer;
+
+        &.is-highlighted {
+            color: white;
+            background-image: linear-gradient(139.37deg, #162878 0%, #3149a3 51.73%, #500e74 100%);
+        }
+    }
+}

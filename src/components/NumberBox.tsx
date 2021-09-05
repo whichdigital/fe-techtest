@@ -1,4 +1,4 @@
-import React from 'react';
+import { memo } from 'react';
 
 interface INumberBox {
     number: number;
@@ -31,4 +31,4 @@ const NumberBox = ({ number, callBack, isMultiple }: INumberBox) => {
     );
 };
 
-export default React.memo(NumberBox);
+export default memo(NumberBox);

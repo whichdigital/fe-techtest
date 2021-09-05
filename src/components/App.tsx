@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { isMultiple } from '../helpers/isMultiple';
 import NumberBox from './NumberBox';
 
 function App() {
@@ -12,12 +13,7 @@ function App() {
     }
 
     const numberBoxList = numbersArray.map((num) => (
-        <NumberBox
-            key={num}
-            number={num}
-            callBack={setChosenNumber}
-            isMultiple={num % chosenNumber === 0 ? true : false}
-        />
+        <NumberBox key={num} number={num} callBack={setChosenNumber} isMultiple={isMultiple(num, chosenNumber)} />
     ));
 
     return (

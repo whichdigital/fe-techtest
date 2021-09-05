@@ -1,5 +1,5 @@
 import React from 'react';
-import { cleanup, render, screen, fireEvent } from '@testing-library/react';
+import { cleanup, render, screen } from '@testing-library/react';
 import NumberBox from '../components/NumberBox';
 
 afterEach(cleanup);
@@ -13,8 +13,8 @@ describe('NumberBox', () => {
         render(<NumberBox number={2} isMultiple={false} callBack={() => {}} />);
         screen.getByText('2');
 
-        render(<NumberBox number={114} isMultiple={false} callBack={() => {}} />);
-        screen.getByText('114');
+        render(<NumberBox number={144} isMultiple={false} callBack={() => {}} />);
+        screen.getByText('144');
     });
 
     it('renders the NumberBox with the correct class', () => {

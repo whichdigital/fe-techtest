@@ -5,9 +5,9 @@ import App from '../components/App';
 afterEach(cleanup);
 
 describe('App', () => {
-    it('renders 114 buttons to the screen', () => {
+    it('renders 144 buttons to the screen', () => {
         render(<App />);
         const allButtons = screen.getAllByRole('button');
-        expect(allButtons).toHaveLength(114);
+        expect(allButtons).toHaveLength(144);
     });
 });

@@ -77,9 +77,9 @@ We would like you to create a client-side web application to help a child unders
 - Each number must be within a large clickable box.
 - Each number must be horizontally and vertically centered within their clickable box.
 - The boxes must be laid out evenly within a grid.
-- On mobile and small screen devices 1 number must be displayed in each grid row.
-- On tablet and middle sized devices 2 numbers must be displayed in each grid row.
-- On desktop and large screen devices 3 numbers must be displayed in each grid row.
+- On mobile and small screen devices, one number must be displayed in each grid row.
+- On tablet and middle sized devices, two numbers must be displayed in each grid row.
+- On desktop and large screen devices, three numbers must be displayed in each grid row.
 - The grid should have a maximum width so that the clickable boxes do not get too large.
 - The grid should be horizontally centered on the screen.
 

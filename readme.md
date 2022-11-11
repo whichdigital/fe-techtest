@@ -64,7 +64,7 @@ To get started you'll need to make sure you have the following software tools in
 
 ### Goal
 
-We would like you to create a client-side web application to help a child understand multiplication. Your application will display a grid of numbers, when a child selects a number the multiples of that chosen number will be highlighted.
+We would like you to create a client-side web application to help a child understand multiplication. Your application will display a grid of numbers. When a child selects a number, the multiples of that chosen number should be highlighted.
 
 ### Functional requirements
 

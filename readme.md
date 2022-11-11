@@ -58,39 +58,43 @@ To get started you'll need to make sure you have the following software tools in
     npm test
     ```
 
-### Development
-
-The source files are located in `src/`. If you change a file, webpack will reload your files and refresh the browser for you.
-
-### Test
-
-You can run the example tests:
-
-`$ npm test`
-
 ## The exercise
 
-__Goal__: Production of a client-side Web application to help a child understand multiplication.
+### Goal
 
-__Duration__: This test is intended to take ~2 hours but may take more
+We would like you to create a client-side web application to help a child understand multiplication. Your application will display a grid of numbers, when a child selects a number the multiples of that chosen number will be highlighted.
 
-__Description__: The application will display a grid of all the numbers from 1 to 144 evenly laid out with a large clickable box around each number. The number should be centered in each box. When the child clicks a box then all the numbers which are a multiple of that number should be highlighted in some way. Clicking on a second number removes the highlighting of the previous selection, then highlights the multiples of the newly selected number.
+### Functional requirements
 
-__Constraints__: On mobile devices the grid will display 1 number per row. On tablet devices 2 numbers per row and on desktop and larger devices 3 numbers per row. The numbers should fill their rows equally. When the screen width grows very large a margin should appear either side of the grid so that the boxes don’t keep getting larger.
+- The application will display numbers from 1 to 144.
+- When a number is clicked all numbers which are a multiple of the chosen number must be highlighted.
+- When a new number is chosen the previously highlighted numbers must be updated.
 
-You do not need to use any libraries but if you do, you should be able to explain the reasons for your choices in the Readme file.
+### Visual requirements
 
-If there is any information that you feel is missing from the story then please make sensible decisions (for example it’s up to you how you define ‘mobile’, as long as it’s sensible, similarly please define highlighting).
+- Each number must be within a large clickable box.
+- Each number must be horizontally and vertically centered within their clickable box.
+- The boxes must be laid out evenly within a grid.
+- On mobile and small screen devices 1 number must be displayed in each grid row.
+- On tablet and middle sized devices 2 numbers must be displayed in each grid row.
+- On desktop and large screen devices 3 numbers must be displayed in each grid row.
+- The grid should have a maximum width so that the clickable boxes do not get too large.
+- The grid should be horizontally centered on the screen.
 
-__Criteria for assessment__: Important things that will be assessed are:
+### Other
 
-* Project layout.
-* Coding style, i.e. your approach not whether you use semicolons or not ;)
-* Your approach to unit testing/TDD
-* Maintainability and extensibility
-* Use of responsive design
-* Performance, Accessibility and use of Semantic HTML
-* Naming conventions used
-* Meeting the requirements
+We'd appreciate it if you could update this readme with additional information about your solution. Things to mention might include the tools used, alternative solutions considered, improvements you'd like to make, or things you'd do differently if you had more time.
 
-The test won’t be assessed on design at all, so don’t worry how it looks.
+### Criteria for assessment
+
+Your completed test exercise will be marked according to a score sheet. We will focus on the following areas:
+
+* That your solution meets the requirements.
+* How accessible your application is.
+* Your approach to testing the application.
+* The use of responsive design.
+* Clear project structure and conventions.
+* How readable and understandable your code is.
+* The performance of your completed application.
+
+You won’t be assessed on design at all, so please don’t worry how it looks.

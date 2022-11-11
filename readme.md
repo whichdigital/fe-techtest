@@ -50,7 +50,7 @@ To get started you'll need to make sure you have the following software tools in
 
     Now open [http://localhost:8080/](http://localhost:8080/) in your browser and you should see a basic HTML page and if you open the developer console in the browser you should see a welcome message which confirms everything is loading and running correctly.
 
-    You will need to press `ctrl + c` to stop the server.
+    To stop the server when no longer needed, you can press <kbd>ctrl</kbd> + <kbd>c</kbd> in the terminal.
 
 4. And to run your tests use the following command:
 

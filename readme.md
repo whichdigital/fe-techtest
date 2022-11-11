@@ -1,36 +1,62 @@
-# Which? Javascript Exercise
+# Which? Front-end Exercise
+
+This repository provides information and a project boilerplate for completing the test exercise sent to candidates applying for front-end roles at Which?.
 
 ## Getting up and running
 
-Clone or fork this repo. If you'd rather start from scratch with your own setup that's fine too, as long as you complete [the exercise](#the-exercise).
+This repository provides a starting point for the test but if you'd rather start from scratch with your own setup that's fine too, as long as you complete [the exercise](#the-exercise).
 
-Which? primarily uses React for its' frontend development requirements, but if you wish to complete this test using native JavaScript or another framework we will not penalise you, and will be interested to understand your decisions.
+We have provided a [Webpack] and [Babel] based development environment which can compile and bundle your source code. It also includes a [server] which will automatically reload your code changes in the browser.
 
-This repo contains a very simple webpack based development environment. We'll need to install some stuff to get going...
+Which? primarily uses [React] and [TypeScript] in our front-end projects but you can use vanilla JavaScript or other tools if you prefer. We have not provided any tooling to work with anything beyond vanilla JavaScript.
+
+We have provided [Jest] to test your code which is a fully featured testing framework. It includes a test runner, assertions, and mock functions.
+
+[React]: https://reactjs.org/
+[TypeScript]: https://www.typescriptlang.org/
+[Webpack]: https://webpack.js.org/
+[Babel]: https://babeljs.io/
+[server]: https://github.com/webpack/webpack-dev-server
+[Jest]: https://jestjs.io/
 
 ### Requirements
 
-Webpack needs nodejs to do its thing. We aren't making a node app - just using it as a dev tool.
+To get started you'll need to make sure you have the following software tools installed:
 
-* [nodejs](https://nodejs.org/en/)
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en/) (version 12 or higher is required)
+- [npm](http://npmjs.com/) (this should be installed along with Node.js)
 
-Installing node.js will also install [npm](https://www.npmjs.com) for us too. We'll need it for dependencies and some scripts.
+### Installation and setup
 
-### Dependencies
+1. Clone this Git repository and change to the new directory that has been created:
 
-We have specified all the dependencies we need in the `package.json` file. Npm will install them for us:
+    ```sh
+    git clone https://github.com/whichdigital/fe-techtest.git --depth 1
+    cd fe-techtest
+    ```
 
-`$ npm install`
+2. Install all of the project dependencies using npm:
 
-### Run!
+    ```sh
+    npm install
+    ```
 
-Ok, time to run the app. Npm takes care of business again:
+3. Once installed you can run the Webpack development server:
 
-`$ npm start`
+    ```sh
+    npm start
+    ```
 
-This will fire up the wepback dev server. It's not important to understand how it works for now.
+    Now open [http://localhost:8080/](http://localhost:8080/) in your browser and you should see a basic HTML page and if you open the developer console in the browser you should see a welcome message which confirms everything is loading and running correctly.
 
-Open [http://localhost:8080/](http://localhost:8080/) in your browser and you should see a basic html page. If you open the development console in your browser you should see a welcome message.
+    You will need to press `ctrl + c` to stop the server.
+
+4. And to run your tests use the following command:
+
+    ```sh
+    npm test
+    ```
 
 ### Development
 

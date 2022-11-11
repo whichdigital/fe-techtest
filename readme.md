@@ -68,9 +68,9 @@ We would like you to create a client-side web application to help a child unders
 
 ### Functional requirements
 
-- The application will display numbers from 1 to 144.
-- When a number is clicked all numbers which are a multiple of the chosen number must be highlighted.
-- When a new number is chosen the previously highlighted numbers must be updated.
+- The application must display numbers from 1 to 144.
+- When a number is clicked, all numbers which are a multiple of the chosen number must be highlighted.
+- When a subsequent number is clicked, all numbers which are a multiple of the new number must be highlighted. Any numbers which are **not** multiples of the new number should no longer be highlighted.
 
 ### Visual requirements
 

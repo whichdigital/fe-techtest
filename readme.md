@@ -1,70 +1,102 @@
-# Which? Javascript Exercise
+# Which? Front-end Exercise
+
+This repository provides information and a project boilerplate for completing the test exercise sent to candidates applying for front-end roles at Which?.
 
 ## Getting up and running
 
-Clone or fork this repo. If you'd rather start from scratch with your own setup that's fine too, as long as you complete [the exercise](#the-exercise).
+This repository provides a starting point for the test but if you'd rather start from scratch with your own setup that's fine too, as long as you complete [the exercise](#the-exercise).
 
-Which? primarily uses React for its' frontend development requirements, but if you wish to complete this test using native JavaScript or another framework we will not penalise you, and will be interested to understand your decisions.
+We have provided a [Webpack] and [Babel] based development environment which can compile and bundle your source code. It also includes a [server] which will automatically reload your code changes in the browser.
 
-This repo contains a very simple webpack based development environment. We'll need to install some stuff to get going...
+Which? primarily uses [React] and [TypeScript] in our front-end projects but you can use vanilla JavaScript or other tools if you prefer. We have not provided any tooling to work with anything beyond vanilla JavaScript.
+
+We have provided [Jest] to test your code which is a fully featured testing framework. It includes a test runner, assertions, and mock functions.
+
+[React]: https://reactjs.org/
+[TypeScript]: https://www.typescriptlang.org/
+[Webpack]: https://webpack.js.org/
+[Babel]: https://babeljs.io/
+[server]: https://github.com/webpack/webpack-dev-server
+[Jest]: https://jestjs.io/
 
 ### Requirements
 
-Webpack needs nodejs to do its thing. We aren't making a node app - just using it as a dev tool.
+To get started you'll need to make sure you have the following software tools installed:
 
-* [nodejs](https://nodejs.org/en/)
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en/) (version 12 or higher is required)
+- [npm](http://npmjs.com/) (this should be installed along with Node.js)
 
-Installing node.js will also install [npm](https://www.npmjs.com) for us too. We'll need it for dependencies and some scripts.
+### Installation and setup
 
-### Dependencies
+1. Clone this Git repository and change to the new directory that has been created:
 
-We have specified all the dependencies we need in the `package.json` file. Npm will install them for us:
+    ```sh
+    git clone https://github.com/whichdigital/fe-techtest.git --depth 1
+    cd fe-techtest
+    ```
 
-`$ npm install`
+2. Install all of the project dependencies using npm:
 
-### Run!
+    ```sh
+    npm install
+    ```
 
-Ok, time to run the app. Npm takes care of business again:
+3. Once installed you can run the Webpack development server:
 
-`$ npm start`
+    ```sh
+    npm start
+    ```
 
-This will fire up the wepback dev server. It's not important to understand how it works for now.
+    Now open [http://localhost:8080/](http://localhost:8080/) in your browser and you should see a basic HTML page. 
+    
+    If you open the developer console in the browser, you should see a welcome message which confirms everything is loading and running correctly.
 
-Open [http://localhost:8080/](http://localhost:8080/) in your browser and you should see a basic html page. If you open the development console in your browser you should see a welcome message.
+    To stop the server when no longer needed, you can press <kbd>ctrl</kbd> + <kbd>c</kbd> in the terminal.
 
-### Development
+4. And to run your tests use the following command:
 
-The source files are located in `src/`. If you change a file, webpack will reload your files and refresh the browser for you.
-
-### Test
-
-You can run the example tests:
-
-`$ npm test`
+    ```sh
+    npm test
+    ```
 
 ## The exercise
 
-__Goal__: Production of a client-side Web application to help a child understand multiplication.
+### Goal
 
-__Duration__: This test is intended to take ~2 hours but may take more
+We would like you to create a client-side web application to help a child understand multiplication. Your application will display a grid of numbers. When a child selects a number, the multiples of that chosen number should be highlighted.
 
-__Description__: The application will display a grid of all the numbers from 1 to 144 evenly laid out with a large clickable box around each number. The number should be centered in each box. When the child clicks a box then all the numbers which are a multiple of that number should be highlighted in some way. Clicking on a second number removes the highlighting of the previous selection, then highlights the multiples of the newly selected number.
+### Functional requirements
 
-__Constraints__: On mobile devices the grid will display 1 number per row. On tablet devices 2 numbers per row and on desktop and larger devices 3 numbers per row. The numbers should fill their rows equally. When the screen width grows very large a margin should appear either side of the grid so that the boxes don’t keep getting larger.
+- The application must display numbers from 1 to 144.
+- When a number is clicked, all numbers which are a multiple of the chosen number must be highlighted.
+- When a subsequent number is clicked, all numbers which are a multiple of the new number must be highlighted. Any numbers which are **not** multiples of the new number should no longer be highlighted.
 
-You do not need to use any libraries but if you do, you should be able to explain the reasons for your choices in the Readme file.
+### Visual requirements
 
-If there is any information that you feel is missing from the story then please make sensible decisions (for example it’s up to you how you define ‘mobile’, as long as it’s sensible, similarly please define highlighting).
+- Each number must be within a large clickable box.
+- Each number must be horizontally and vertically centered within their clickable box.
+- The boxes must be laid out evenly within a grid.
+- On mobile and small screen devices, one number must be displayed in each grid row.
+- On tablet and middle sized devices, two numbers must be displayed in each grid row.
+- On desktop and large screen devices, three numbers must be displayed in each grid row.
+- The grid should have a maximum width so that the clickable boxes do not get too large.
+- The grid should be horizontally centered on the screen.
 
-__Criteria for assessment__: Important things that will be assessed are:
+### Other
 
-* Project layout.
-* Coding style, i.e. your approach not whether you use semicolons or not ;)
-* Your approach to unit testing/TDD
-* Maintainability and extensibility
-* Use of responsive design
-* Performance, Accessibility and use of Semantic HTML
-* Naming conventions used
-* Meeting the requirements
+We'd appreciate it if you could update this readme with additional information about your solution. Things to mention might include the tools used, alternative solutions considered, improvements you'd like to make, or things you'd do differently if you had more time.
 
-The test won’t be assessed on design at all, so don’t worry how it looks.
+### Criteria for assessment
+
+Your completed test exercise will be marked according to a score sheet. We will focus on the following areas:
+
+* That your solution meets the requirements.
+* How accessible your application is.
+* Your approach to testing the application.
+* The use of responsive design.
+* Clear project structure and conventions.
+* How readable and understandable your code is.
+* The performance of your completed application.
+
+You won’t be assessed on the appearance of the app beyond the visual requirements and accessibility criteria.

@@ -99,4 +99,4 @@ Your completed test exercise will be marked according to a score sheet. We will 
 * How readable and understandable your code is.
 * The performance of your completed application.
 
-You won’t be assessed on design at all, so please don’t worry how it looks.
+You won’t be assessed on the appearance of the app beyond the visual requirements and accessibility criteria.

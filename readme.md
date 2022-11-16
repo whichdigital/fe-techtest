@@ -92,7 +92,7 @@ We'd appreciate it if you could update this readme with additional information a
 Your completed test exercise will be marked according to a score sheet. We will focus on the following areas:
 
 * That your solution meets the requirements.
-* How accessible your application is.
+* How usable your application is when using assistive technology.
 * Your approach to testing the application.
 * The use of responsive design.
 * Clear project structure and conventions.

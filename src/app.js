@@ -1,6 +1,11 @@
-// source goes here
-const app = function() {
-  console.log('hello from app!');
-};
+import HomePage from "./app/pages/home/HomePage";
+import React from "react";
+function App() {
+  return (
+    <div>
+      <HomePage />
+    </div>
+  );
+}
 
-export default app;
+export default App;

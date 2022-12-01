@@ -1,0 +1,77 @@
+
+.card {
+    background-color: #e9f5f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    height: 76vh;
+    overflow: scroll;
+}
+.grid-item{
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+    padding: 1rem;
+    text-align: center;
+    width: 10rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    
+
+}
+.grid-item:hover{
+   z-index: 3;
+    box-shadow:  0 6px 10px 0 rgba(0, 0, 0, 0.14),
+    0 1px 18px 0 rgba(0, 0, 0, 0.12),
+    0 3px 5px -1px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease-in-out;
+
+}
+/* for tablet */
+@media only screen and (min-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        height: 77vh;
+    }
+    .grid_item {
+      padding: 2rem;
+    }
+  }
+  
+  /* for desktop */
+
+    @media only screen and (min-width: 981px) {
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+            height: 72vh;
+            }
+            .grid_item {
+            padding: 1rem;
+            }
+      }
+
+.selected {
+    background-color: #Be252d;
+    color: #fff;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+    transition: all 0.2s ease-in-out;
+}
+
+.highlighted {
+    background-color:green;
+    color: #fff;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+    transition: all 0.2s ease-in-out;
+}

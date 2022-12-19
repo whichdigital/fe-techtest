@@ -1,0 +1,27 @@
+.main-container {
+  margin-top: 20px;
+  max-width: 700px;
+}
+
+.main {
+  height: 75vh;
+  overflow-y: auto;
+}
+
+.block {
+  text-align: center;
+  padding: 35px 0px;
+  background-color: #6c757d;
+  color: #fff;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.block:hover {
+  background-color: #999;
+}
+
+.highlight {
+  background-color: dodgerblue;
+  font-weight: bold;
+}

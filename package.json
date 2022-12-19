@@ -1,40 +1,49 @@
 {
-  "name": "which-fe-tech-test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "start": "webpack serve --mode=development"
-  },
-  "author": "",
-  "license": "ISC",
+  "name": "fe-techtest",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@babel/core": "7.19.0",
-    "@babel/preset-env": "7.19.0",
-    "css-loader": "5.2.0",
-    "jest": "29.2.0",
-    "style-loader": "2.0.0",
-    "webpack": "4.46.0",
-    "webpack-cli": "4.10.0",
-    "webpack-dev-server": "4.11.0"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.9",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "bootstrap": "^5.2.3",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "react-test-renderer": "^18.2.0",
+    "typescript": "^4.9.4",
+    "web-vitals": "^2.1.4"
   },
-  "babel": {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": [
-            "defaults"
-          ]
-        }
-      ]
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
     ]
   },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/__mocks__/fileMock.js",
-      "\\.(css|less|scss)$": "<rootDir>/test/__mocks__/styleMock.js"
-    }
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-test-renderer": "^18.0.0"
   }
 }

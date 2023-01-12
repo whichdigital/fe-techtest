@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    app: ['./src/index.js']
+    app: './src/index.js'
   },
   module: {
     rules: [{
@@ -14,7 +14,7 @@ module.exports = {
     }],
   },
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'public/assets/'),
     publicPath: '/assets/',
     filename: 'bundle.js'
   }

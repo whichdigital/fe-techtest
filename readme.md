@@ -85,7 +85,11 @@ We would like you to create a client-side web application to help a child unders
 
 ### Other
 
-We'd appreciate it if you could update this readme with additional information about your solution. Things to mention might include the tools used, alternative solutions considered, improvements you'd like to make, or things you'd do differently if you had more time.
+Update this readme with additional information about your solution. Things to mention might include:
+- Why you used the tools you chose.
+- Alternative solutions which you considered.
+- Improvements you'd like to make.
+- Things you'd do differently if you had more time.
 
 ### Criteria for assessment
 
